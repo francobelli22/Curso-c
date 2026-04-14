@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int main()
+//Calculo de matrices por con valores dados por el usuario
+int main() 
 {
   int matriz1[3][3];
   int matriz2[3][3];
