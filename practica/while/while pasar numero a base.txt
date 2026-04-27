@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int N, b;
+    int x;
+    long s = 0;
+    int i = 0;
+
+    printf("Ingrese el numero decimal (N): ");
+    scanf("%d", &N);
+    printf("Ingrese la base destino (b): ");
+    scanf("%d", &b);
+
+    while(N > 0)
+    {
+        x = N % b;
+        N = N / b;
+        s = s + x * pow(10, i);
+        i++;
+    }
+
+    printf("El numero en base %d es: %ld\n", b, s);
+
+    return 0;
+}
